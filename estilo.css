@@ -1,0 +1,134 @@
+/* CSS: estilo.css */
+body {
+  /*background-image: url(imagenes/foto-principal.jpg);*/
+  background-size: cover;
+  backdrop-filter: blur(0px);
+  margin: 0;
+}
+
+@font-face {
+  font-family: "tropical";
+  src: url("../fonts/TROPICAL\ ROTHELA.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "cherolina";
+  src: url("../fonts/Cherolina.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "gothi";
+  src: url("../fonts/GOTHIC.TTF") format("woff2");
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna */
+  gap: 0px; /* Espacio entre filas */
+  border-radius: 6px;
+  margin: 0 auto;
+  background-image: url(imagenes/foto-principal.jpg);
+  background-size: 100%;
+  max-width: 100vh;
+  height: 4350px;
+  /*width: 410px;
+  height: 3016px;*/
+}
+
+.fecha1 {
+  position: relative;
+  grid-row: 1;
+  font-family: tropical;
+  color: #f3f3f3;
+  margin-left: 8%;
+  margin-top: -26%;
+}
+
+.fecha1 p {
+  font-size: 1400%;
+}
+
+.dia {
+  letter-spacing: 0px;
+  animation: glow 5s infinite alternate;
+}
+
+.fecha2 {
+  grid-row: 2;
+  font-family: tropical;
+  color: #f3f3f3;
+  margin-left: 30px;
+  margin-top: -1370px;
+}
+
+.fecha2 p {
+  font-size: 220px;
+}
+
+.mes {
+  letter-spacing: 25px;
+  animation: glow 5s infinite alternate;
+}
+
+.fecha3 {
+  grid-row: 3;
+  font-family: tropical;
+  color: #f3f3f3;
+  margin-left: 30px;
+  margin-top: -1960px;
+}
+.fecha3 p {
+  font-size: 220px;
+}
+
+.año {
+  letter-spacing: -18px;
+  animation: glow 5s infinite alternate;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 2px #fff, 0 0 9px #ccc, 0 0 5px #999, 0 0 7px #666,
+      0 0 25px #333;
+  }
+  50% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #ccc, 0 0 15px #999, 0 0 20px #666,
+      0 0 30px #333;
+  }
+}
+
+.ubicacion-ceremonia {
+  grid-row: 4;
+  color: #666;
+  text-align: center;
+  margin-top: -1400px;
+}
+
+.ubicacion-ceremonia img {
+  height: 60px;
+  animation: pulsate 3.2s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 12px;
+  margin-top: 0;
+  font-family: gothi;
+}
